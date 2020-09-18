@@ -416,8 +416,9 @@ h3 {
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 .footer-social {
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+
+  margin: 12px 0 0 0;
 }
 /* Клиенты */
 .clients .list {
@@ -467,7 +468,7 @@ h3 {
   background-color: var(--bg-color-dark);
 }
 .footer .container {
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 .logo-secondary {
   display: inline-block;
@@ -512,12 +513,10 @@ h3 {
 .footer-nav {
   margin-right: 70px;
 }
-.footer-social-subscribe {
-  margin-bottom: 72px;
-}
+
 .social-text {
   margin-bottom: 20px;
-  /* width: 100%; */
+
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -526,9 +525,12 @@ h3 {
   color: var(--contrast-white-color);
 }
 .subscribe-form {
-  /* margin-left: auto; */
+  margin: 12px 0 0 auto;
 }
-
+.subscribe-form:focus-within input {
+  border-color: var(--contrast-white-color);
+  outline: var(--accent-color);
+}
 .form-input-button {
   display: flex;
   justify-content: center;
@@ -547,6 +549,7 @@ h3 {
 
 .form-subscribe input {
   display: inline-block;
+  width: 358px;
   padding: 15px 16px;
   margin: 0 12px 0 0;
 
@@ -554,22 +557,33 @@ h3 {
   background-color: transparent;
 
   font-size: 16px;
-
-  width: 358px;
+  color: var(--contrast-white-color);
 
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
   border-radius: 4px;
 }
+.form-subscribe input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--contrast-text-color);
+}
+.form-subscribe input:not(:placeholder-shown) {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .form-subscribe button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding: 13px 0px;
   outline: transparent;
   min-width: 200px;
-  max-height: 50px;
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 
   font-weight: 700;
   font-size: 16px;
@@ -601,6 +615,8 @@ h3 {
   /* width: 100%;
   height: 100%; */
   background-color: rgba(0, 0, 0, 0.2);
+  /* opacity: 1; */
+  transition: opacity var(--transition-duration) var(--transition-timing-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
