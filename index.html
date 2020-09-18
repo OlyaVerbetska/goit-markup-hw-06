@@ -342,38 +342,50 @@
           </address>
         </div>
         <!-- Футер Присоединяйтесь -->
-        <div class="footer-social">
-          <p class="social-text">присоединяйтесь</p>
-          <ul class="socials-list list flexbox">
-            <li class="socials-item">
-              <a class="link flexbox" href="" target="_blank" rel="noopener noreferrer" aria-label="ссылка Instagram">
-                <svg class="socials-icon-company" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a class="link flexbox" href="" target="_blank" rel="noopener noreferrer" aria-label="ссылка Twitter">
-                <svg class="socials-icon-company" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a class="link flexbox" href="" target="_blank" rel="noopener noreferrer" aria-label="ссылка Facebook">
-                <svg class="socials-icon-company" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a class="link flexbox" href="" target="_blank" rel="noopener noreferrer" aria-label="ссылка Linkedin">
-                <svg class="socials-icon-company" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-social-subscribe flexbox">
+          <div class="footer-social flexbox">
+            <span class="social-text">присоединяйтесь</span>
+            <ul class="socials-list list flexbox">
+              <li class="socials-item">
+                <a class="link flexbox" href="" target="_blank" rel="noopener noreferrer" aria-label="ссылка Instagram">
+                  <svg class="socials-icon-company" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a class="link flexbox" href="" target="_blank" rel="noopener noreferrer" aria-label="ссылка Twitter">
+                  <svg class="socials-icon-company" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a class="link flexbox" href="" target="_blank" rel="noopener noreferrer" aria-label="ссылка Facebook">
+                  <svg class="socials-icon-company" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a class="link flexbox" href="" target="_blank" rel="noopener noreferrer" aria-label="ссылка Linkedin">
+                  <svg class="socials-icon-company" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Футер форма подписки -->
+          <form action="" class="subscribe-form flexbox">
+            <label class="form-subscribe" for="">
+              <span>Подпишитесь на рассылку</span>
+              <div class="form-input-button">
+                <input type="email" name="" id="" />
+                <button>Подписаться</button>
+              </div>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
@@ -385,37 +397,47 @@
             <use href="./images/sprite.svg#icon-close-button"></use>
           </svg>
         </button>
+
+        <!-- Форма -->
         <form action="" class="">
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="form-field">
-            <label for="user-name">Имя</label>
-            <input type="text" id="user-name" name="user-name" />
+
+          <label class="form-field">
+            <span class="form-label">Имя</span>
+
+            <input class="form-input" type="text" name="user-name" placeholder=" " autocomplete="off" />
             <svg class="input-icon" width="12px" height="12px">
               <use href="./images/sprite.svg#icon-form-name"></use>
             </svg>
-          </div>
-          <div class="form-field">
-            <label for="user-tel">Телефон</label>
-            <input type="tel" id="user-tel" name="user-tel" />
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Телефон</span>
+
+            <input class="form-input" type="tel" name="user-tel" placeholder=" " autocomplete="off" />
             <svg class="input-icon" width="13px" height="13px">
               <use href="./images/sprite.svg#icon-form-tel"></use>
             </svg>
-          </div>
-          <div class="form-field">
-            <label for="user-mail">Почта</label>
-            <input type="email" id="user-mail" name="user-mail" />
-            <svg class="input-icon" width="15px" height="12px">
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Почта</span>
+
+            <input class="form-input" type="email" name="user-mail" placeholder=" " autocomplete="off" />
+            <svg class="input-icon" width="13px" height="13px">
               <use href="./images/sprite.svg#icon-form-mail"></use>
             </svg>
-          </div>
-          <div class="form-comment">
-            <label for="user-comment"> Комментарий</label>
-            <textarea name="form-comment" id="user-comment" placeholder="Введите текст"></textarea>
-          </div>
+          </label>
+
+          <label class="form-field"> Комментарий</label>
+          <textarea class="form-comment" name="form-comment" placeholder="Введите текст"></textarea>
+
           <div class="agreement">
-            <input type="checkbox" name="agreement" id="agreement"/>
+            <input type="checkbox" name="agreement" id="agreement" />
             <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-                     </div>
+          </div>
+
+          <button class="hero-button form-submit">Отправить</button>
         </form>
       </div>
     </div>
