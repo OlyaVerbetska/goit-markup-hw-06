@@ -405,7 +405,7 @@
             <span class="form-label">Имя</span>
 
             <input class="form-input" type="text" name="user-name" placeholder=" " autocomplete="off" />
-            <svg class="input-icon" width="12px" height="12px">
+            <svg class="input-icon" width="18px" height="18px">
               <use href="./images/sprite.svg#icon-form-name"></use>
             </svg>
           </label>
@@ -414,7 +414,7 @@
             <span class="form-label">Телефон</span>
 
             <input class="form-input" type="tel" name="user-tel" placeholder=" " autocomplete="off" />
-            <svg class="input-icon" width="13px" height="13px">
+            <svg class="input-icon" width="18px" height="18px">
               <use href="./images/sprite.svg#icon-form-tel"></use>
             </svg>
           </label>
@@ -423,7 +423,7 @@
             <span class="form-label">Почта</span>
 
             <input class="form-input" type="email" name="user-mail" placeholder=" " autocomplete="off" />
-            <svg class="input-icon" width="13px" height="13px">
+            <svg class="input-icon" width="18px" height="18px">
               <use href="./images/sprite.svg#icon-form-mail"></use>
             </svg>
           </label>
@@ -433,10 +433,13 @@
             <textarea class="form-comment" name="form-comment" placeholder="Введите текст"></textarea>
           </label>
 
-          <div class="agreement">
-            <input type="checkbox" name="agreement" id="agreement" />
-            <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-          </div>
+          <label class="form-agreement">
+            <input class="form-agreement-check visually-hidden" type="checkbox" name="form-agreement" />
+            <svg class="icon-check" width="16px" height="15px">
+              <use href="./images/sprite.svg#icon-form-check"></use>
+            </svg>
+            <span class="form-agreement-text">Соглашаюсь с рассылкой и принимаю <a class="form-agreement-link" href="">Условия договора</a> </span>
+          </label>
 
           <button class="hero-button form-submit">Отправить</button>
         </form>
