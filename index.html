@@ -377,14 +377,13 @@
           </ul>
         </div>
         <!-- Футер форма подписки -->
-        <form action="" class="subscribe-form flexbox">
-          <label class="form-subscribe">
-            <span>Подпишитесь на рассылку</span>
-            <div class="form-input-button">
-              <input type="email" name="user-subscribe-mail" id="" placeholder="E-mail" />
-              <button>Подписаться</button>
-            </div>
+
+        <form class="subscribe-form flexbox">
+          <label class="subscribe-label">
+            <span class="subscribe-label-title">Подпишитесь на рассылку </span>
+            <input class="subscribe-input" type="email" name="user-subscribe-mail" placeholder="E-mail" autocomplete="off" />
           </label>
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </div>
     </footer>
@@ -398,7 +397,7 @@
         </button>
 
         <!-- Форма -->
-        <form action="" class="">
+        <form class="form-modal">
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
 
           <label class="form-field">
@@ -438,9 +437,7 @@
             <!-- <svg class="icon-check" width="16px" height="15px">
               <use href="./images/sprite.svg#icon-form-check"></use>
             </svg> -->
-            <span class="form-agreement-text"
-              >Соглашаюсь с рассылкой и принимаю&nbsp<a class="form-agreement-link" href="">Условия договора</a>
-            </span>
+            <span class="form-agreement-text">Соглашаюсь с рассылкой и принимаю<a class="form-agreement-link" href="">Условия договора</a> </span>
           </label>
 
           <button class="hero-button form-submit">Отправить</button>
