@@ -541,7 +541,7 @@ h3 {
 .subscribe-label-title {
   display: inline-block;
   margin: 0 0 20px 0;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--contrast-white-color);
